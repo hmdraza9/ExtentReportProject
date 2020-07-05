@@ -19,7 +19,7 @@ public class testBase
     public static void BrowserInitSetup() throws InterruptedException {
     	co = new ChromeOptions();
 //    	co.addArguments("--headless");
-    	System.out.println("Browser initialization");
+    	System.out.println("Url test, Before Test, Browser initialization");
     	System.setProperty("webdriver.chrome.driver", "C:/Users/Abdul Hamid Raza/Documents/all-drivers/chromedriver.exe");
 		driver = new ChromeDriver(co);
 		
@@ -29,7 +29,7 @@ public class testBase
     }
 
     public void BrowserQuit() {
-    	System.out.println("Browser closing");
+    	System.out.println("Url test, After Test, Browser closing");
     	driver.quit();
     }
     
@@ -67,10 +67,10 @@ public class testBase
 	
 
     public void AfterClassMethod() {
-    	System.out.println("I am in BaseClass App.java, method: AfterClassMethod");
-    }//AfterClassMethod //beforeClass
+    	System.out.println("Url test, AfterClass");
+    }
 
     public void beforeClassMethod() {
-    	System.out.println("I am in BaseClass App.java, method: Before ClassMethod");
+    	System.out.println("Url test, BeforeClass");
     }
 }

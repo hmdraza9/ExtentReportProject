@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 /**
  * Unit test for simple App.
  */
-public class URLTest extends testBase
+public class urlTest extends testBase
 {
 	
 	@BeforeTest
@@ -31,7 +31,7 @@ public class URLTest extends testBase
 	public void inCom() {
 		openInDotCom();
 	}
-	
+
 	@Test
 	public void Yahoo() {
 		openYahoo();
@@ -46,12 +46,6 @@ public class URLTest extends testBase
 	public void guru99() {
 		openGuru99demo();
 	}
-	
-	@Test
-    public void methodHellowWord()
-    {
-        System.out.println( "Hello World!" );
-    }
 
 	@AfterClass
 	public void classEnds() {
