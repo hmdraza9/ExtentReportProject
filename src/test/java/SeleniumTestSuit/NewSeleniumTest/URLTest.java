@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 /**
  * Unit test for simple App.
  */
-public class urlTest extends testBase
+public class urllTest extends testBase
 {
 	
 	@BeforeTest
