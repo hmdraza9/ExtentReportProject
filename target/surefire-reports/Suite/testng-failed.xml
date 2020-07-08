@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="extentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="titleValidation(failed)" verbose="0">
+    <classes>
+      <class name="SeleniumTestSuit.NewSeleniumTest.URLTest">
+        <methods>
+          <include name="classEnds"/>
+          <include name="AfterMeth"/>
+          <include name="ToolsQA"/>
+          <include name="beforeMeth"/>
+          <include name="browserRelease"/>
+          <include name="classStarts"/>
+          <include name="browserConfig"/>
+        </methods>
+      </class> <!-- SeleniumTestSuit.NewSeleniumTest.URLTest -->
+    </classes>
+  </test> <!-- titleValidation(failed) -->
+</suite> <!-- Failed suite [Suite] -->

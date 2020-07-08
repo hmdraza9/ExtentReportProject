@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.URLTest" class="method navigator-link" hash-for-method="ToolsQA">ToolsQA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,37 +116,32 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.urlTest" class="method navigator-link" hash-for-method="ToolsQA">ToolsQA</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.URLTest" class="method navigator-link" hash-for-method="BlaBlaBla">BlaBlaBla</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.urlTest" class="method navigator-link" hash-for-method="Yahoo">Yahoo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.titleValidationTest" class="method navigator-link" hash-for-method="FirstTest">FirstTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.urlTest" class="method navigator-link" hash-for-method="google">google</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.URLTest" class="method navigator-link" hash-for-method="Yahoo">Yahoo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.urlTest" class="method navigator-link" hash-for-method="guru99">guru99</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.URLTest" class="method navigator-link" hash-for-method="google">google</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.titleValidationTest" class="method navigator-link" hash-for-method="helloDear">helloDear</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.URLTest" class="method navigator-link" hash-for-method="guru99">guru99</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.urlTest" class="method navigator-link" hash-for-method="inCom">inCom</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.urlTest" class="method navigator-link" hash-for-method="methodHellowWord">methodHellowWord</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="SeleniumTestSuit.NewSeleniumTest.URLTest" class="method navigator-link" hash-for-method="inCom">inCom</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -147,25 +156,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">SeleniumTestSuit.NewSeleniumTest.titleValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="helloDear">
-                  </a> <!-- helloDear -->
-                  <span class="method-name">helloDear</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">SeleniumTestSuit.NewSeleniumTest.urlTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">SeleniumTestSuit.NewSeleniumTest.URLTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -173,6 +167,44 @@
                   <a name="ToolsQA">
                   </a> <!-- ToolsQA -->
                   <span class="method-name">ToolsQA</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#efefefefef&quot;}
+  (Session info: headless chrome=83.0.4103.116)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ABDUL-HAMID-MJK&apos;, ip: &apos;192.168.0.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ABDULH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 97ebb7036016ec10d810f6ff17b02588
+*** Element info: {Using=id, value=efefefefef}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at SeleniumTestSuit.NewSeleniumTest.testBase.openToolsQA(testBase.java:66)
+	at SeleniumTestSuit.NewSeleniumTest.URLTest.ToolsQA(URLTest.java:52)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SeleniumTestSuit.NewSeleniumTest.URLTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BlaBlaBla">
+                  </a> <!-- BlaBlaBla -->
+                  <span class="method-name">BlaBlaBla</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -203,11 +235,19 @@
                   <span class="method-name">inCom</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SeleniumTestSuit.NewSeleniumTest.titleValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="methodHellowWord">
-                  </a> <!-- methodHellowWord -->
-                  <span class="method-name">methodHellowWord</span>
+                  <a name="FirstTest">
+                  </a> <!-- FirstTest -->
+                  <span class="method-name">FirstTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -222,6 +262,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;extentReportListener.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;urlValidation&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;SeleniumTestSuit.NewSeleniumTest.titleValidationTest&quot;/&gt;
@@ -229,7 +272,7 @@
   &lt;/test&gt; &lt;!-- urlValidation --&gt;
   &lt;test name=&quot;titleValidation&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;SeleniumTestSuit.NewSeleniumTest.urlTest&quot;/&gt;
+      &lt;class name=&quot;SeleniumTestSuit.NewSeleniumTest.URLTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- titleValidation --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -275,32 +318,32 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ToolsQA')
-data.setCell(0, 2, 'SeleniumTestSuit.NewSeleniumTest.urlTest')
-data.setCell(0, 3, 5808);
+data.setCell(0, 2, 'SeleniumTestSuit.NewSeleniumTest.URLTest')
+data.setCell(0, 3, 5442);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'guru99')
-data.setCell(1, 2, 'SeleniumTestSuit.NewSeleniumTest.urlTest')
-data.setCell(1, 3, 2941);
+data.setCell(1, 1, 'inCom')
+data.setCell(1, 2, 'SeleniumTestSuit.NewSeleniumTest.URLTest')
+data.setCell(1, 3, 2611);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Yahoo')
-data.setCell(2, 2, 'SeleniumTestSuit.NewSeleniumTest.urlTest')
-data.setCell(2, 3, 1696);
+data.setCell(2, 1, 'guru99')
+data.setCell(2, 2, 'SeleniumTestSuit.NewSeleniumTest.URLTest')
+data.setCell(2, 3, 2504);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'inCom')
-data.setCell(3, 2, 'SeleniumTestSuit.NewSeleniumTest.urlTest')
-data.setCell(3, 3, 1436);
+data.setCell(3, 1, 'Yahoo')
+data.setCell(3, 2, 'SeleniumTestSuit.NewSeleniumTest.URLTest')
+data.setCell(3, 3, 1500);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'google')
-data.setCell(4, 2, 'SeleniumTestSuit.NewSeleniumTest.urlTest')
-data.setCell(4, 3, 1082);
+data.setCell(4, 2, 'SeleniumTestSuit.NewSeleniumTest.URLTest')
+data.setCell(4, 3, 898);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'helloDear')
+data.setCell(5, 1, 'FirstTest')
 data.setCell(5, 2, 'SeleniumTestSuit.NewSeleniumTest.titleValidationTest')
-data.setCell(5, 3, 7);
+data.setCell(5, 3, 4);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'methodHellowWord')
-data.setCell(6, 2, 'SeleniumTestSuit.NewSeleniumTest.urlTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'BlaBlaBla')
+data.setCell(6, 2, 'SeleniumTestSuit.NewSeleniumTest.URLTest')
+data.setCell(6, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -332,52 +375,134 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumTestSuit.NewSeleniumTest.titleValidationTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">helloDear</span>
+              <div class="configuration-test before">
+                <span class="method-name">b4Test</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">SeleniumTestSuit.NewSeleniumTest.urlTest</div> <!-- chronological-class-name -->
+              </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">browserConfig</span>
-                <span class="method-start">49 ms</span>
+                <span class="method-start">6 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">classStarts</span>
-                <span class="method-start">7535 ms</span>
+                <span class="method-name">b4Class</span>
+                <span class="method-start">19535 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">ToolsQA</span>
-                <span class="method-start">7536 ms</span>
+                <span class="method-name">FirstTest</span>
+                <span class="method-start">19540 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Yahoo</span>
-                <span class="method-start">13346 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">google</span>
-                <span class="method-start">15044 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">guru99</span>
-                <span class="method-start">16127 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">inCom</span>
-                <span class="method-start">19069 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">methodHellowWord</span>
-                <span class="method-start">20506 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMeth</span>
+                <span class="method-start">19540 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class after">
+                <span class="method-name">AfterClass</span>
+                <span class="method-start">19545 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMeth</span>
+                <span class="method-start">19545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">AfterTest</span>
+                <span class="method-start">19546 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-test after">
                 <span class="method-name">browserRelease</span>
-                <span class="method-start">20507 ms</span>
+                <span class="method-start">19546 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SeleniumTestSuit.NewSeleniumTest.URLTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">20130 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">BlaBlaBla</span>
+                <span class="method-start">29420 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMeth</span>
+                <span class="method-start">29420 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">classStarts</span>
+                <span class="method-start">29420 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMeth</span>
+                <span class="method-start">29422 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMeth</span>
+                <span class="method-start">29422 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ToolsQA</span>
+                <span class="method-start">29423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMeth</span>
+                <span class="method-start">34869 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Yahoo</span>
+                <span class="method-start">34869 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMeth</span>
+                <span class="method-start">34869 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMeth</span>
+                <span class="method-start">36370 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMeth</span>
+                <span class="method-start">36370 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">google</span>
+                <span class="method-start">36370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMeth</span>
+                <span class="method-start">37268 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMeth</span>
+                <span class="method-start">37269 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">guru99</span>
+                <span class="method-start">37269 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMeth</span>
+                <span class="method-start">39774 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMeth</span>
+                <span class="method-start">39774 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">inCom</span>
+                <span class="method-start">39775 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMeth</span>
+                <span class="method-start">42387 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">browserRelease</span>
+                <span class="method-start">42387 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-class after">
                 <span class="method-name">classEnds</span>
-                <span class="method-start">20507 ms</span>
+                <span class="method-start">42387 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

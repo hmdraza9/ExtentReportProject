@@ -1,61 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-05T08:51:44Z" name="Suite" finished-at="2020-07-05T08:52:05Z" duration-ms="21202">
+  <suite started-at="2020-07-08T14:50:46Z" name="Suite" finished-at="2020-07-08T14:51:29Z" duration-ms="42971">
     <groups>
     </groups>
-    <test started-at="2020-07-05T08:51:44Z" name="urlValidation" finished-at="2020-07-05T08:51:44Z" duration-ms="20">
+    <test started-at="2020-07-08T14:50:46Z" name="urlValidation" finished-at="2020-07-08T14:51:06Z" duration-ms="20103">
       <class name="SeleniumTestSuit.NewSeleniumTest.titleValidationTest">
-        <test-method signature="helloDear()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.titleValidationTest@3cebbb30]" started-at="2020-07-05T14:21:44Z" name="helloDear" finished-at="2020-07-05T14:21:44Z" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="b4Test()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.titleValidationTest@7d4f9aae]" started-at="2020-07-08T20:20:46Z" name="b4Test" finished-at="2020-07-08T20:20:46Z" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- helloDear -->
-      </class> <!-- SeleniumTestSuit.NewSeleniumTest.titleValidationTest -->
-    </test> <!-- urlValidation -->
-    <test started-at="2020-07-05T08:51:44Z" name="titleValidation" finished-at="2020-07-05T08:52:05Z" duration-ms="21142">
-      <class name="SeleniumTestSuit.NewSeleniumTest.urlTest">
-        <test-method is-config="true" signature="browserConfig()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.urlTest@6221a451]" started-at="2020-07-05T14:21:44Z" name="browserConfig" finished-at="2020-07-05T14:21:51Z" duration-ms="7486" status="PASS">
+        </test-method> <!-- b4Test -->
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.titleValidationTest@7d4f9aae]" started-at="2020-07-08T20:20:46Z" name="browserConfig" finished-at="2020-07-08T20:21:05Z" duration-ms="19525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method is-config="true" signature="classStarts()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.urlTest@6221a451]" started-at="2020-07-05T14:21:51Z" name="classStarts" finished-at="2020-07-05T14:21:51Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="b4Class()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.titleValidationTest@7d4f9aae]" started-at="2020-07-08T20:21:05Z" name="b4Class" finished-at="2020-07-08T20:21:05Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- classStarts -->
-        <test-method signature="ToolsQA()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.urlTest@6221a451]" started-at="2020-07-05T14:21:51Z" name="ToolsQA" finished-at="2020-07-05T14:21:57Z" duration-ms="5808" status="PASS">
+        </test-method> <!-- b4Class -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.titleValidationTest@7d4f9aae]" started-at="2020-07-08T20:21:05Z" name="beforeMeth" finished-at="2020-07-08T20:21:05Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToolsQA -->
-        <test-method signature="Yahoo()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.urlTest@6221a451]" started-at="2020-07-05T14:21:57Z" name="Yahoo" finished-at="2020-07-05T14:21:59Z" duration-ms="1696" status="PASS">
+        </test-method> <!-- beforeMeth -->
+        <test-method signature="FirstTest()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.titleValidationTest@7d4f9aae]" started-at="2020-07-08T20:21:05Z" name="FirstTest" finished-at="2020-07-08T20:21:05Z" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Yahoo -->
-        <test-method signature="google()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.urlTest@6221a451]" started-at="2020-07-05T14:21:59Z" name="google" finished-at="2020-07-05T14:22:00Z" duration-ms="1082" status="PASS">
+        </test-method> <!-- FirstTest -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.titleValidationTest@7d4f9aae]" started-at="2020-07-08T20:21:05Z" name="AfterClass" finished-at="2020-07-08T20:21:05Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- google -->
-        <test-method signature="guru99()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.urlTest@6221a451]" started-at="2020-07-05T14:22:00Z" name="guru99" finished-at="2020-07-05T14:22:03Z" duration-ms="2941" status="PASS">
+        </test-method> <!-- AfterClass -->
+        <test-method is-config="true" signature="AfterMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.titleValidationTest@7d4f9aae]" started-at="2020-07-08T20:21:05Z" name="AfterMeth" finished-at="2020-07-08T20:21:05Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- guru99 -->
-        <test-method signature="inCom()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.urlTest@6221a451]" started-at="2020-07-05T14:22:03Z" name="inCom" finished-at="2020-07-05T14:22:04Z" duration-ms="1436" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inCom -->
-        <test-method signature="methodHellowWord()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.urlTest@6221a451]" started-at="2020-07-05T14:22:04Z" name="methodHellowWord" finished-at="2020-07-05T14:22:04Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodHellowWord -->
-        <test-method is-config="true" signature="classEnds()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.urlTest@6221a451]" started-at="2020-07-05T14:22:04Z" name="classEnds" finished-at="2020-07-05T14:22:04Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classEnds -->
-        <test-method is-config="true" signature="browserRelease()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.urlTest@6221a451]" started-at="2020-07-05T14:22:04Z" name="browserRelease" finished-at="2020-07-05T14:22:05Z" duration-ms="683" status="PASS">
+        </test-method> <!-- AfterMeth -->
+        <test-method is-config="true" signature="browserRelease()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.titleValidationTest@7d4f9aae]" started-at="2020-07-08T20:21:05Z" name="browserRelease" finished-at="2020-07-08T20:21:06Z" duration-ms="554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserRelease -->
-      </class> <!-- SeleniumTestSuit.NewSeleniumTest.urlTest -->
+        <test-method is-config="true" signature="AfterTest()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.titleValidationTest@7d4f9aae]" started-at="2020-07-08T20:21:05Z" name="AfterTest" finished-at="2020-07-08T20:21:05Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- SeleniumTestSuit.NewSeleniumTest.titleValidationTest -->
+    </test> <!-- urlValidation -->
+    <test started-at="2020-07-08T14:51:06Z" name="titleValidation" finished-at="2020-07-08T14:51:29Z" duration-ms="22839">
+      <class name="SeleniumTestSuit.NewSeleniumTest.URLTest">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:06Z" name="browserConfig" finished-at="2020-07-08T20:21:15Z" duration-ms="9289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:15Z" name="beforeMeth" finished-at="2020-07-08T20:21:15Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method is-config="true" signature="classStarts()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:15Z" name="classStarts" finished-at="2020-07-08T20:21:15Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classStarts -->
+        <test-method signature="BlaBlaBla()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:15Z" name="BlaBlaBla" finished-at="2020-07-08T20:21:15Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BlaBlaBla -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:15Z" name="beforeMeth" finished-at="2020-07-08T20:21:15Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method is-config="true" signature="AfterMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:15Z" name="AfterMeth" finished-at="2020-07-08T20:21:15Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMeth -->
+        <test-method signature="ToolsQA()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:15Z" name="ToolsQA" finished-at="2020-07-08T20:21:21Z" duration-ms="5442" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#efefefefef"}
+  (Session info: headless chrome=83.0.4103.116)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ABDUL-HAMID-MJK', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ABDULH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 97ebb7036016ec10d810f6ff17b02588
+*** Element info: {Using=id, value=efefefefef}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#efefefefef"}
+  (Session info: headless chrome=83.0.4103.116)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'ABDUL-HAMID-MJK', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ABDULH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 97ebb7036016ec10d810f6ff17b02588
+*** Element info: {Using=id, value=efefefefef}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at SeleniumTestSuit.NewSeleniumTest.testBase.openToolsQA(testBase.java:66)
+	at SeleniumTestSuit.NewSeleniumTest.URLTest.ToolsQA(URLTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToolsQA -->
+        <test-method is-config="true" signature="AfterMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:21Z" name="AfterMeth" finished-at="2020-07-08T20:21:21Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMeth -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:21Z" name="beforeMeth" finished-at="2020-07-08T20:21:21Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method signature="Yahoo()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:21Z" name="Yahoo" finished-at="2020-07-08T20:21:22Z" duration-ms="1500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Yahoo -->
+        <test-method signature="google()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:22Z" name="google" finished-at="2020-07-08T20:21:23Z" duration-ms="898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google -->
+        <test-method is-config="true" signature="AfterMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:22Z" name="AfterMeth" finished-at="2020-07-08T20:21:22Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMeth -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:22Z" name="beforeMeth" finished-at="2020-07-08T20:21:22Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method is-config="true" signature="AfterMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:23Z" name="AfterMeth" finished-at="2020-07-08T20:21:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMeth -->
+        <test-method signature="guru99()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:23Z" name="guru99" finished-at="2020-07-08T20:21:25Z" duration-ms="2504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guru99 -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:23Z" name="beforeMeth" finished-at="2020-07-08T20:21:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method is-config="true" signature="AfterMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:25Z" name="AfterMeth" finished-at="2020-07-08T20:21:25Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMeth -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:25Z" name="beforeMeth" finished-at="2020-07-08T20:21:25Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method signature="inCom()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:25Z" name="inCom" finished-at="2020-07-08T20:21:28Z" duration-ms="2611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inCom -->
+        <test-method is-config="true" signature="AfterMeth()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:28Z" name="AfterMeth" finished-at="2020-07-08T20:21:28Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMeth -->
+        <test-method is-config="true" signature="browserRelease()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:28Z" name="browserRelease" finished-at="2020-07-08T20:21:29Z" duration-ms="581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserRelease -->
+        <test-method is-config="true" signature="classEnds()[pri:0, instance:SeleniumTestSuit.NewSeleniumTest.URLTest@38cee291]" started-at="2020-07-08T20:21:28Z" name="classEnds" finished-at="2020-07-08T20:21:28Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classEnds -->
+      </class> <!-- SeleniumTestSuit.NewSeleniumTest.URLTest -->
     </test> <!-- titleValidation -->
   </suite> <!-- Suite -->
 </testng-results>

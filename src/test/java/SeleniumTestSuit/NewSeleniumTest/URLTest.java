@@ -3,8 +3,10 @@ package SeleniumTestSuit.NewSeleniumTest;
 import java.io.IOException;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -24,6 +26,12 @@ public class URLTest extends testBase
 		BrowserQuit();
 	}
 
+
+	@Test
+	public void InURLTest() {
+				System.out.println("In URLTest");
+	}
+	
 	@Test
 	public void google() throws IOException {
 		openGoogle();
@@ -49,13 +57,24 @@ public class URLTest extends testBase
 		openGuru99demo();
 	}
 
+	@BeforeMethod
+	public void beforeMeth() {
+    	System.out.println("Url test, BeforeMethod");
+	}
+
+	@AfterMethod
+	public void AfterMeth() {
+    	System.out.println("Url test, AfterMethod");
+	}
+	
+	
 	@AfterClass
 	public void classEnds() {
-		AfterClassMethod();
+    	System.out.println("Url test, AfterClass");
 	}
 
 	@BeforeClass
 	public void classStarts() {
-		beforeClassMethod();
+    	System.out.println("Url test, BeforeClass");
 	}
 }

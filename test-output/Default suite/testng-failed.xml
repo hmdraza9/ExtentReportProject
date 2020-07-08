@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="SeleniumTestSuit.NewSeleniumTest.URLTest">
+        <methods>
+          <include name="classEnds"/>
+          <include name="AfterMeth"/>
+          <include name="inCom"/>
+          <include name="Yahoo"/>
+          <include name="ToolsQA"/>
+          <include name="beforeMeth"/>
+          <include name="google"/>
+          <include name="guru99"/>
+          <include name="browserRelease"/>
+          <include name="classStarts"/>
+          <include name="browserConfig"/>
+        </methods>
+      </class> <!-- SeleniumTestSuit.NewSeleniumTest.URLTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
