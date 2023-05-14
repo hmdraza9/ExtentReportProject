@@ -33,12 +33,12 @@ public class URLTest extends testBase
 	}
 	
 	@Test
-	public void google() throws IOException {
+	public void Google() throws IOException {
 		openGoogle();
 	}
 	
 	@Test
-	public void inCom() throws IOException {
+	public void InCom() throws IOException {
 		openInDotCom();
 	}
 
@@ -53,7 +53,7 @@ public class URLTest extends testBase
 	}
 	
 	@Test
-	public void guru99() throws IOException {
+	public void Guru99() throws IOException {
 		openGuru99demo();
 	}
 
