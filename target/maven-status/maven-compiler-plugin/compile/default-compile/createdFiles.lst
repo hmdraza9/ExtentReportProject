@@ -1,4 +1,4 @@
-SeleniumTestSuit\NewSeleniumTest\ScreenshotTaker.class
-extentReportListener\ExtentReporterNG.class
-SeleniumTestSuit\NewSeleniumTest\PropertyReaderClass.class
+util\ScreenshotTaker.class
 SeleniumTestSuit\NewSeleniumTest\testBase.class
+extentReportListener\ExtentReporterNG.class
+util\PropertyReaderClass.class

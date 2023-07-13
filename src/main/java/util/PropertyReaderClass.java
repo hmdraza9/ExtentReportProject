@@ -1,4 +1,4 @@
-package SeleniumTestSuit.NewSeleniumTest;
+package util;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ public class PropertyReaderClass {
 	public String propReader(String propKey) throws IOException {
 		// TODO Auto-generated method stub
 
-		FileReader reader = new FileReader("C:\\workspace\\testMaven\\Data\\dataFile.properties");
+		FileReader reader = new FileReader("C:/all-props/myprops.properties");
 		Properties pr = new Properties();
 		pr.load(reader);
 		

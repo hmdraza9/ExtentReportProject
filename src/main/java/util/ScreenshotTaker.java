@@ -1,4 +1,4 @@
-package SeleniumTestSuit.NewSeleniumTest;
+package util;
 
 import java.io.File;
 import java.io.IOException;
@@ -36,29 +36,41 @@ String scrollElementIntoMiddle = "var viewPortHeight = Math.max(document.documen
 	
 	public void Snapper(ChromeDriver driver) throws IOException {
 		File scr = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String ScreenshotFullPath = System.getProperty("user.dir")+"\\Screenshots\\"+folderNameCreator()+"\\"+timeStampAppender()+".png";
+		String ScreenshotFullPath = System.getProperty("user.dir")+"\\Screenshots\\"+folderNameCreator()+"\\"+timeStampAppender()+".jpg";
 		FileUtils.copyFile(scr, new File(ScreenshotFullPath));//Save file
 		System.out.println("Screenshot taken"+scr.getName().toString());
 	}
 
 	public void Snapper(WebDriver driver) throws IOException {
 		File scr = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String ScreenshotFullPath = System.getProperty("user.dir")+"\\Screenshots\\"+folderNameCreator()+"\\"+timeStampAppender()+".png";
+		String ScreenshotFullPath = System.getProperty("user.dir")+"\\Screenshots\\"+folderNameCreator()+"\\"+timeStampAppender()+".jpg";
 		FileUtils.copyFile(scr, new File(ScreenshotFullPath));//Save file
 	}
 
 	public void Snapper(WebDriver driver, boolean toPrint) throws IOException {
 		File scr = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String ScreenshotFullPath = System.getProperty("user.dir")+"\\Screenshots\\"+folderNameCreator()+"\\"+timeStampAppender()+".png";
+		String ScreenshotFullPath = System.getProperty("user.dir")+"\\Screenshots\\"+folderNameCreator()+"\\"+timeStampAppender()+".jpg";
 		FileUtils.copyFile(scr, new File(ScreenshotFullPath));//Save file
 		if(toPrint) {
 
-			System.out.println("Screenshot taken: "+timeStampAppender()+".png");
+			System.out.println("Screenshot taken: "+timeStampAppender()+".jpg");
 		}
 	}
-		
+
+
+	public String SnapperName(WebDriver driver, String name)  {
+		File scr = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String ScreenshotFullPath = "C:/all-screenshot/"+folderNameCreator()+"/"+(name)+timeStampAppender()+".jpg";
+		try {
+			FileUtils.copyFile(scr, new File(ScreenshotFullPath));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return ScreenshotFullPath;
+	}		
 	private String timeStampAppender(){
-		final SimpleDateFormat sdfTime = new SimpleDateFormat("yyMMddHHmmssSSS");
+		final SimpleDateFormat sdfTime = new SimpleDateFormat("dd-MMM-yyyy, HHmmss");
 //		final SimpleDateFormat sdfTime = new SimpleDateFormat("yyMMddHHmmss");
 		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 		String suffix = sdfTime.format(timestamp);

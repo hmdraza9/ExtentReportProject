@@ -12,20 +12,31 @@ import org.testng.ISuite;
 import org.testng.ISuiteResult;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.xml.XmlSuite;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class ExtentReporterNG implements IReporter {
-	
-	private ExtentReports extent;
+import SeleniumTestSuit.NewSeleniumTest.testBase;
+import util.ScreenshotTaker;
 
-	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
-			String outputDirectory) {
-		extent = new ExtentReports(outputDirectory + File.separator
-				+ "ExtentReportsTestNG.html", true);
+public class ExtentReporterNG implements IReporter {
+
+	private ExtentReports extent;
+	ScreenshotTaker st;
+	testBase tb = new testBase();
+	private static String ExtRepoDir;
+
+	@BeforeMethod
+	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
+		st = new ScreenshotTaker();
+		ExtentReporterNG.ExtRepoDir = outputDirectory + File.separator + "ExtentReportsTestNG.html";
+		extent = new ExtentReports(ExtentReporterNG.ExtRepoDir, true);
 
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();
@@ -43,6 +54,7 @@ public class ExtentReporterNG implements IReporter {
 		extent.close();
 	}
 
+	@AfterMethod
 	private void buildTestNodes(IResultMap tests, LogStatus status) {
 		ExtentTest test;
 
@@ -59,13 +71,22 @@ public class ExtentReporterNG implements IReporter {
 				if (result.getThrowable() != null) {
 					test.log(status, result.getThrowable());
 				} else {
-					test.log(status, "Test " + status.toString().toLowerCase()
-							+ "ed");
+					test.log(status, "Test " + status.toString().toLowerCase() + "ed");
 				}
+				if (result.getStatus() == ITestResult.SUCCESS || result.getStatus() == ITestResult.FAILURE
+						|| result.getStatus() == ITestResult.SKIP) {
 
+					String screenshotPath = st.SnapperName(tb.getDriver(), result.getName());
+					test.addScreenCapture(screenshotPath);
+				}
+				
+				test.addScreenCapture(st.SnapperName(tb.getDriver(), result.getName()));
+				
+				//don't delete below step
 				extent.endTest(test);
 			}
 		}
+
 	}
 
 	private Date getTime(long millis) {
